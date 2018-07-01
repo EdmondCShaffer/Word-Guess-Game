@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+        crossorigin="anonymous">
+    <title>Hangman</title>
+
+    <style type="text/css">
+        .jumbotron {
+            background: url("http://oyster.ignimgs.com/wordpress/stg.ign.com/2016/02/jugsaw-720x406.jpg");
+            background-size: cover;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row-5">
+            <div class="col-md-12">
+                <div class="jumbotron">
+                    <h1 class="display-4 text-center text-danger">Lets Play A Game... Try Not to HANG!</h1>
+                    <hr class="my-4">
+                    <p class="text-danger text-bold">Press Start If You Dare.</p>
+                    <button id="buttonStart" type="button" class="btn-danger">Start!</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 py-6 " id="placeholder">
+                <div class="container">
+                    <div class="col-12 col-md-6 my-4 text-center">
+                        <h2>Solve the word!
+                            <br>
+                            <span id="fillunderscores"></span>
+                        </h2>
+                        <div class="col-12 col-md-6 my-4 text-center float-right">
+                            <h2> Wrong letters!
+                                <br>
+                                <span id="wrongLetters"></span>
+                            </h2>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-4 text-center py-5">
+                    <h3> Guesses Left!
+                        <span id="guessleft"></span>
+                    </h3>
+                </div>
+                <div class="col-12 col-md-4 text-center py-5">
+                    <h3> Wins!
+                        <span id="winner"></span>
+                    </h3>
+                </div>
+                <div class="col-12 col-md-4 text-center py-5">
+                    <h3> Losses!
+                        <span id="loser"></span>
+                    </h3>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="assets/javascript/game.js/myscripts.js">
+
+
+
+
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>
