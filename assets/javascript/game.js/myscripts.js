@@ -12,7 +12,7 @@ var wrongletterbank = [];
 
 // doc.getelementbyId variable's
 var win = document.getElementById("winner");
-var loss = document.getElementById("losser");
+var loss = document.getElementById("loser");
 var guess = document.getElementById("guessleft");
 var wrongLetter = document.getElementById("wrongLetters");
 var underscores = document.getElementById("fillunderscores");
@@ -83,7 +83,6 @@ function wrongLetterGuess(letter){
         document.getElementById("wrongLetters").textContent = wrongletterbank.join(" ");
         document.getElementById("guessleft").textContent = guessesLeft ;
     }
-
     checkLoss();
 }
 
@@ -93,7 +92,7 @@ function checkLoss() {
         gameStart = false;
         document.getElementById("loser").textContent = losses;
     }
-    
+
     win();
 }
 
