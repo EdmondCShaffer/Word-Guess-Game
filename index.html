@@ -14,7 +14,14 @@
             background: url("https://whatson-kyiv.com/wp-content/uploads/2017/09/craft_beer_1800.jpg");
             background-size: cover;
         }
+
+        body{
+            background-image: url(https://previews.123rf.com/images/kasza/kasza1701/kasza170100088/68916558-craft-beer-tasting-wood-background-.jpg);
+            background-size: cover;
+        }
     </style>
+
+    
 
 </head>
 
@@ -36,15 +43,14 @@
 
     <div class="container">
         <div class="row">
-            <!-- <div class="col-md-12 py-6 " id="placeholder"> -->
 
-            <div class="col-md-6 my-4 text-center">
+            <div class="col-md-6 my-4 text-center bg-light my-2">
                 <h2>Solve the word!
                     <br>
                     <span id="fillunderscores"></span>
                 </h2>
             </div>
-            <div class="col-md-6 my-4 text-center float-right">
+            <div class="col-md-6 my-4 text-center float-right bg-warning">
                 <h2> Wrong letters!
                     <br>
                     <span id="wrongLetters"></span>
@@ -52,17 +58,17 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-12 col-md-4 text-center py-5">
+            <div class="col-12 col-md-4 text-center py-3 bg-warning">
                 <h3> Guesses Left!
                     <span id="guessleft"></span>
                 </h3>
             </div>
-            <div class="col-12 col-md-4 text-center py-5">
+            <div class="col-12 col-md-4 text-center py-3 bg-light">
                 <h3> Wins!
                     <span id="winner">0</span>
                 </h3>
             </div>
-            <div class="col-12 col-md-4 text-center py-5">
+            <div class="col-12 col-md-4 text-center py-3 bg-dark text-warning">
                 <h3> Losses!
                     <span id="loser">0</span>
                 </h3>
