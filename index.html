@@ -11,7 +11,7 @@
 
     <style type="text/css">
         .jumbotron {
-            background: url("http://oyster.ignimgs.com/wordpress/stg.ign.com/2016/02/jugsaw-720x406.jpg");
+            background: url("https://whatson-kyiv.com/wp-content/uploads/2017/09/craft_beer_1800.jpg");
             background-size: cover;
         }
     </style>
@@ -24,10 +24,10 @@
         <div class="row-5">
             <div class="col-md-12">
                 <div class="jumbotron">
-                    <h1 class="display-4 text-center text-danger">Lets Play A Game... Try Not to HANG!</h1>
+                    <h1 class="display-4 text-center text-warning">Name The Beer to get a CHEERS!</h1>
                     <hr class="my-4">
-                    <p class="text-danger text-bold">Press Start If You Dare.</p>
-                    <button id="buttonStart" type="button" class="btn-danger">Start!</button>
+                    <p class="text-warning text-bold">Play Responsibly</p>
+                    <button id="buttonStart" type="button" class="btn-warning">Bottom's Up!</button>
                 </div>
             </div>
         </div>
@@ -36,42 +36,40 @@
 
     <div class="container">
         <div class="row">
-            <div class="col-md-12 py-6 " id="placeholder">
-                <div class="container">
-                    <div class="col-12 col-md-6 my-4 text-center">
-                        <h2>Solve the word!
-                            <br>
-                            <span id="fillunderscores"></span>
-                        </h2>
-                        <div class="col-12 col-md-6 my-4 text-center float-right">
-                            <h2> Wrong letters!
-                                <br>
-                                <span id="wrongLetters"></span>
-                            </h2>
+            <!-- <div class="col-md-12 py-6 " id="placeholder"> -->
 
-                        </div>
-                    </div>
-                </div>
+            <div class="col-md-6 my-4 text-center">
+                <h2>Solve the word!
+                    <br>
+                    <span id="fillunderscores"></span>
+                </h2>
             </div>
-            <div class="row">
-                <div class="col-12 col-md-4 text-center py-5">
-                    <h3> Guesses Left!
-                        <span id="guessleft"></span>
-                    </h3>
-                </div>
-                <div class="col-12 col-md-4 text-center py-5">
-                    <h3> Wins!
-                        <span id="winner"></span>
-                    </h3>
-                </div>
-                <div class="col-12 col-md-4 text-center py-5">
-                    <h3> Losses!
-                        <span id="loser"></span>
-                    </h3>
-                </div>
-
+            <div class="col-md-6 my-4 text-center float-right">
+                <h2> Wrong letters!
+                    <br>
+                    <span id="wrongLetters"></span>
+                </h2>
             </div>
         </div>
+        <div class="row">
+            <div class="col-12 col-md-4 text-center py-5">
+                <h3> Guesses Left!
+                    <span id="guessleft"></span>
+                </h3>
+            </div>
+            <div class="col-12 col-md-4 text-center py-5">
+                <h3> Wins!
+                    <span id="winner">0</span>
+                </h3>
+            </div>
+            <div class="col-12 col-md-4 text-center py-5">
+                <h3> Losses!
+                    <span id="loser">0</span>
+                </h3>
+            </div>
+
+        </div>
+    </div>
     </div>
 
 

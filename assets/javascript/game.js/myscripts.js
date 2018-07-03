@@ -1,6 +1,6 @@
 // Javascript Document
 // my variable's
-var wordBank = ["Cody", "Karina", "john", 'shawnda'];
+var wordBank = ["Green", "Haze", "Bright", 'Julius',"FullClip","Doubleganger","Luscious","Crusher","Hellbrook","Alena","Beelzebub","Skadoosh","Lightweight","Sprang","Mettle","Artaic","Vicinity","Pier","Santilli","Whirlpool","Morph","Awake","Matiss","Bennington"];
 var underScores = [];
 var wins = 0;
 var losses = 0;
@@ -65,62 +65,58 @@ function letterGuess(letter) {
     }
     else {
         if (!gameStart) {
-            alert("Click Start To Play");
+            alert("Click Bottom's Up Play");
         }
         else {
-            alert("You pick a letter already guessed please try again");
+            alert("Are you seeing double? Try Another Letter.");
         }
     }
 }
 
-function wrongLetterGuess(letter){
+function wrongLetterGuess(letter) {
 
     if (underScores.indexOf(letter.toLowerCase()) === -1 &&
-    underScores.indexOf(letter.toUpperCase()) === -1) {
+        underScores.indexOf(letter.toUpperCase()) === -1) {
         guessesLeft--;
         wrongletterbank.push(letter);
 
         document.getElementById("wrongLetters").textContent = wrongletterbank.join(" ");
-        document.getElementById("guessleft").textContent = guessesLeft ;
+        document.getElementById("guessleft").textContent = guessesLeft;
     }
     checkLoss();
+    winn();
 }
 
 function checkLoss() {
-    if (guessesLeft ===0){
+    if (guessesLeft === 0) {
         losses++;
         gameStart = false;
         document.getElementById("loser").textContent = losses;
+        alert("You Lost! You Must Be DRUNK! Call a Ride Home.");
     }
-
-    win();
+    
 }
 
-// 
-function win(){
-    if(wordPicked.toLowerCase()=== underScores.join(" ").toLowerCase())
-    {
+
+function winn() { debugger
+    if (wordPicked.toLowerCase() === underScores.join("").toLowerCase()) {
         wins++;
         gameStart = false;
         document.getElementById("winner").textContent = wins;
+        alert("CHEERS! Your a Winner")
     }
-    console.log(win);
+    
 }
 
+    document.onkeyup = function (event) { 
+        console.dir(event);
+        if (event.keyCode >= 65 && event.keyCode <= 90) {
+            letterGuess(event.key);
+        }
 
-document.onkeyup = function (event) {
-    console.dir(event);
-    if (event.keyCode >= 65 && event.keyCode <= 90) {
-        letterGuess(event.key);
     }
 
-}
+    document.getElementById("buttonStart").addEventListener("click", newGame);
 
-
-
-
-
-document.getElementById("buttonStart").addEventListener("click", newGame);
-console.log(newGame);
 
 
